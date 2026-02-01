@@ -36,8 +36,19 @@ logging.basicConfig(
 )
 
 async def forward_to_twitter(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    # --- كود تشخيص المشكلة ---
+    if update.channel_post:
+        chat_username = update.channel_post.chat.username
+        print(f"⚠️ تنبيه: البوت استلم رسالة من القناة: @{chat_username}")
+        print(f"   (القناة المطلوبة في الكود هي: {CHANNEL_USERNAME})")
+    # --------------------------
+
     # التأكد أن الرسالة قادمة من القناة المحددة
-    
+    if not update.channel_post or update.channel_post.chat.username != CHANNEL_USERNAME.replace('@', ''):
+        print("❌ تم تجاهل الرسالة لأن اسم القناة غير مطابق.")
+        return
+
+    # ... باقي الكود كما هو ...
 
     msg = update.channel_post
     media_ids = []
@@ -113,4 +124,5 @@ if __name__ == '__main__':
     print("🤖 البوت يعمل الآن ويراقب القناة...")
 
     app.run_polling()
+
 
