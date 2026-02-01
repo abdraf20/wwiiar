@@ -13,7 +13,7 @@ ACCESS_TOKEN = '1456970619342442499-vr8KB1movLCJPINeK39X8I3yXDWBZO'
 ACCESS_TOKEN_SECRET = 'I3mEhIoaahQ1431dMMVaCZO80zvpSgIJMOXojPoyimDFV'
 
 # تيليجرام
-TELEGRAM_TOKEN = 'TuoBoHO3Nj14ifWE353UctGLmu5Q96oDSsl4DLpFTT494'
+TELEGRAM_TOKEN = '8221732723:AAHgcN5ULfFXMGDusTIzrMGdafmxrmez9yw'
 CHANNEL_USERNAME = '@WWIIIAR'  # مثال: @MyNewsChannel
 
 # ================= تهيئة الاتصال بتويتر =================
@@ -124,5 +124,6 @@ if __name__ == '__main__':
     print("🤖 البوت يعمل الآن ويراقب القناة...")
 
     app.run_polling()
+
 
 
