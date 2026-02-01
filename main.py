@@ -7,13 +7,13 @@ import tweepy
 
 # ================= إعدادات التوثيق (يجب تعبئتها) =================
 # تويتر
-API_KEY = 'xr11siBG0ngZ1RIcbJA6oT3Za'
-API_SECRET = 'ScB6gZldid8F3tvBeROd8oGQHJZDSDbaYgXn00alX0jvTYCJsS'
-ACCESS_TOKEN = '1456970619342442499-nA1jTJylngAzIItyhX6sQdGo4Vqrxx'
+API_KEY = '7y54FKPfLFIqxd84fjeQi5lwi'
+API_SECRET = 'Cymdt4scVfMrpKEjOtlD3MGBy5gX1ixaq7iJ8tesxMfVA0Kq2T'
+ACCESS_TOKEN = '1456970619342442499-vr8KB1movLCJPINeK39X8I3yXDWBZO'
 ACCESS_TOKEN_SECRET = 'I3mEhIoaahQ1431dMMVaCZO80zvpSgIJMOXojPoyimDFV'
 
 # تيليجرام
-TELEGRAM_TOKEN = '8221732723:AAHgcN5ULfFXMGDusTIzrMGdafmxrmez9yw'
+TELEGRAM_TOKEN = 'TuoBoHO3Nj14ifWE353UctGLmu5Q96oDSsl4DLpFTT494'
 CHANNEL_USERNAME = '@WWIIIAR'  # مثال: @MyNewsChannel
 
 # ================= تهيئة الاتصال بتويتر =================
@@ -113,3 +113,4 @@ if __name__ == '__main__':
     print("🤖 البوت يعمل الآن ويراقب القناة...")
 
     app.run_polling()
+
