@@ -37,8 +37,7 @@ logging.basicConfig(
 
 async def forward_to_twitter(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # التأكد أن الرسالة قادمة من القناة المحددة
-    if not update.channel_post or update.channel_post.chat.username != CHANNEL_USERNAME.replace('@', ''):
-        return
+    
 
     msg = update.channel_post
     media_ids = []
@@ -112,4 +111,5 @@ if __name__ == '__main__':
     ))
     
     print("🤖 البوت يعمل الآن ويراقب القناة...")
+
     app.run_polling()
